@@ -67,7 +67,7 @@ This dashboard can help answer questions such as:
 9. Start your Prefect session with the following command: `prefect orion start`
 
 10. From your terminal session, run this command to setup some blocks for your GCP credentials in prefect:
-`python ./setup/make_gcp_blocks.py`
+`python3 ./setup/make_gcp_blocks.py`
 
 11. Run the following command in your terminal: `python3 prefect/flows/03_deployments/parameterized_flow.py`
 
