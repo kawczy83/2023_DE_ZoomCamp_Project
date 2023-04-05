@@ -38,7 +38,7 @@ This dashboard can help answer questions such as:
 1. First  we `git clone https://github.com/kawczy83/2023_DE_ZoomCamp_Project` into an empty directory and then `cd` into the repo folder.
 
 2. Set up your python virtual environment with the following commmands:
-
+- `python3 -m venv <directory>`
 - `source venv/bin/activate`
 - `pip install -r ./setup/requirements.txt`
 
