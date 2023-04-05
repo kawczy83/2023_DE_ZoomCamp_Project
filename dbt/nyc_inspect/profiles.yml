@@ -1,0 +1,15 @@
+nyc_inspect:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      dataset: nyc_inspect_development
+      threads: 4
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS')}}"
+    prod:
+      type: bigquery
+      method: service-account
+      dataset: nyc_inspect_production
+      threads: 4
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS')}}"

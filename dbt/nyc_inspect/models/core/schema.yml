@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: >
+      List of unique boro, building, street, zipcode, latitude, and longitude of each restaurant 
+  - name: dim_name
+    description: >
+      List of unique camis, name, cuisine_description, and phone number of restaurant
+  - name: dim_violation
+    description: >
+      List of unique combinations of violation code and its corresponding description
+  - name: fact_inspect
+    description: > 
+      Fact table storing inspection and record dates, grade, and score
+    
