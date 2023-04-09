@@ -6,23 +6,25 @@
 
 select
   lc.location_id,
-  n.name_id,
+  c.cuisine_id,
   v.violation_id,
+  camis,
   inspection_date,
-  grade_date,
+  record_date,
+  action,
+  inspection_type,
+  critical_flag,
   grade,
-  score,-- non-additive fact
-  bbl -- degenerate dimension
-from {{ ref('stg_nyc_inspect') }} ip
+  grade_date,
+  score
+from {{ ref('stg_nyc_inspect') }} stg
 join {{ref('dim_location') }} lc
-    on lc.boro = ip.boro
-    and lc.zipcode = ip.zipcode
-    and lc.building = ip.building
-    and lc.latitude = ip.latitude
-    and lc.longitude = ip.longitude
-join {{ref('dim_name') }} n 
-    on n.camis = ip.camis
-    and n.dba = ip.dba
+    on lc.boro = stg.boro
+    and lc.building = stg.building
+    and lc.street = stg.street
+    and lc.zipcode = stg.zipcode
+    and lc.phone = stg.phone
+join {{ref('dim_cuisine') }} c 
+    on c.cuisine_description = stg.cuisine_description
 join {{ref('dim_violation') }} v
-    on v.critical_flag = ip.critical_flag
-    and v.violation_code = ip.violation_code
+    on v.violation_code = stg.violation_code
