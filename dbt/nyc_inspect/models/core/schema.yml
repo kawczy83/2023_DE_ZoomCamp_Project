@@ -4,9 +4,9 @@ models:
   - name: dim_location
     description: >
       List of unique boro, building, street, zipcode, latitude, and longitude of each restaurant 
-  - name: dim_name
+  - name: dim_cuisine
     description: >
-      List of unique camis, name, cuisine_description, and phone number of restaurant
+      List of unique cuisine_descriptions
   - name: dim_violation
     description: >
       List of unique combinations of violation code and its corresponding description
