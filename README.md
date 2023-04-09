@@ -73,6 +73,6 @@ This dashboard can help answer questions such as:
 
 ## Dashboard
 
-![dashboard](img/dashboard.png)
+![dashboard](img/dashboard1.png)
 
 The dashboard can be found at: <https://lookerstudio.google.com/s/kwHOY4XMrHQ>
