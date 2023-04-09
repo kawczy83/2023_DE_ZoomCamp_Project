@@ -10,16 +10,32 @@ select
     building,
     street,
     zipcode,
+    phone,
     latitude,
-    longitude
+    longitude,
+    community_board,
+    council_district,
+    census_tract,
+    bin,
+    bbl,
+    nta,
+    dba
 from (
     select
       distinct boro,
       building,
       street,
       zipcode,
+      phone,
       latitude,
-      longitude
+      longitude,
+      community_board,
+      council_district,
+      census_tract,
+      bin,
+      bbl,
+      nta,
+      dba
    from {{ ref('stg_nyc_inspect') }}
     )
 where boro <> '0'
