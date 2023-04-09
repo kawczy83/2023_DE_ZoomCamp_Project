@@ -7,15 +7,11 @@
 select
     row_number() over(order by violation_code) as violation_id,
     violation_code,
-    violation_description,
-    critical_flag,
-    action
+    violation_description
 from 
 (select
       distinct violation_code,
-      violation_description,
-      critical_flag,
-      action
+      violation_description
 from {{ ref('stg_nyc_inspect') }}
     )
 
