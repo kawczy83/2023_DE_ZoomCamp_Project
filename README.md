@@ -75,4 +75,4 @@ This dashboard can help answer questions such as:
 
 ![dashboard](img/dashboard1.png)
 
-The dashboard can be found at: <https://lookerstudio.google.com/s/kPoNkPYH8kw>
+The dashboard can be found [here.](https://lookerstudio.google.com/reporting/92c19ee9-74a6-4af9-897d-10e6d8847aa6)
