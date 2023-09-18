@@ -1,5 +1,9 @@
 # NYC Restaurant Inspection DE Project
 
+⚠️ Current Status: Dashboard Unavailable ⚠️
+
+Due to running out of Google Cloud credits, the dashboard is currently not functional. I am passively seeking alternatives to bring it back online. If you are interested in contributing to this project, either by providing Google Cloud credits or by helping to migrate the service to a different platform, please reach out.
+
 ## Table of contents
 
 - [Problem statement](#problem-statement)
@@ -64,7 +68,7 @@ This dashboard can help answer questions such as:
    - `prefect profile use <profile_name>`
    - `prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api`
 
-9. Start your Prefect session with the following command: `prefect orion start`
+9. Start your Prefect session with the following command: `prefect start`
 
 10. From your terminal session, run this command to setup some blocks for your GCP credentials in prefect:
 `python3 ./setup/make_gcp_blocks.py`
