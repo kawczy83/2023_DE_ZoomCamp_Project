@@ -2,7 +2,8 @@
 
 ⚠️ Current Status: Dashboard Unavailable ⚠️
 
-Due to running out of Google Cloud credits, the dashboard is currently not functional. I am passively seeking alternatives to bring it back online. If you are interested in contributing to this project, either by providing Google Cloud credits or by helping to migrate the service to a different platform, please reach out.
+Due to running out of Google Cloud credits, the dashboard is currently not functional. I am passively seeking alternatives to bring it back online. If you are interested in contributing to this project, either by providing Google Cloud credits or by helping to migrate the service to a different platform, please reach out
+via email.
 
 ## Table of contents
 
